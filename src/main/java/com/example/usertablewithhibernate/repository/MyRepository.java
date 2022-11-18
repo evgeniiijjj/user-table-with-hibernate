@@ -10,7 +10,7 @@ import java.util.Optional;
 
 @Repository
 public interface MyRepository extends JpaRepository<Person, PersonId> {
-    List<Person> findByCity(String city);
+    List<Person> findByCityEqualsIgnoreCase(String city);
     List<Person> findByIdAgeLessThanOrderByIdAge(int age);
     Optional<Person> findByIdNameAndIdSurname(String name, String surname);
 }

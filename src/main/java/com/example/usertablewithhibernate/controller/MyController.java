@@ -22,7 +22,7 @@ public class MyController {
 
     @GetMapping("/by-city")
     public List<Person> getPersonsByCity(@RequestParam String city) {
-        return repository.findByCity(city);
+        return repository.findByCityEqualsIgnoreCase(city);
     }
 
     @GetMapping("/by-age")
