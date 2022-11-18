@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @Repository
 public interface MyRepository extends JpaRepository<Person, PersonId> {
-    @Query("select p from Person as p where p.city = :city")
+    @Query("select p from Person as p where lower(p.city) = lower(:city)")
     List<Person> findByCity(@Param("city") String city);
     @Query("select p from Person as p where p.id.age < :age order by p.id.age")
     List<Person> findByIdAgeLessThanOrderByIdAge(@Param("age") int age);
