@@ -1,4 +1,3 @@
 databaseChangeLog:
-  - include:
-      file: migrations/schema.sql
-      relativeToChangelogFile: true
+  - includeAll:
+      path: db/changelog/migrations/
