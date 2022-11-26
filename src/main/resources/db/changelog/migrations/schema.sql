@@ -10,9 +10,9 @@ CREATE TABLE PERSONS
 );
 
 INSERT INTO PERSONS (name, surname, age, phone_number, city_of_living)
-VALUES ('Петр', 'Петров', 20, 89283654596, 'MOSCOW'),
-       ('Василий', 'Васильев', 31, 89283694536, 'MOSCOW'),
-       ('Олег', 'Олегович', 35, 89283656786, 'KAZAN'),
-       ('Дмитрий', 'Дмитриев', 37, 89383654596, 'VLADIVOSTOK'),
-       ('Михаил', 'Михайлов', 35, 89283651236, 'MOSCOW');
+VALUES ('Petr', 'Petrov', 20, 89283654596, 'MOSCOW'),
+       ('Ivan', 'Ivanov', 31, 89283694536, 'MOSCOW'),
+       ('Alex', 'Alexiev', 35, 89283656786, 'KAZAN'),
+       ('Dmitry', 'Dmitrov', 37, 89383654596, 'VLADIVOSTOK'),
+       ('Mihail', 'Mihailov', 35, 89283651236, 'MOSCOW');
 
